@@ -18,6 +18,8 @@
   margin-top: 20px;
 
   transition: background 0.5s ease-in;
+
+  cursor: pointer;
 }
 
 .container {
@@ -69,6 +71,7 @@ button {
   font-size: 20px;
   text-transform: uppercase;
   margin-top: 2px;
+  cursor: pointer;
 }
 
 #message {
