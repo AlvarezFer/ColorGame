@@ -1,0 +1,89 @@
+.square {
+  float: left;
+
+  width: 30%;
+
+  height: 0;
+
+  padding-bottom: 30%;
+
+  background-color: cornflowerblue;
+
+  display: block;
+
+  margin: 1%;
+
+  border-radius: 20px;
+
+  margin-top: 20px;
+
+  transition: background 0.5s ease-in;
+}
+
+.container {
+  width: 600px;
+
+  margin: 0 auto;
+}
+
+body {
+  margin: 0% auto;
+
+  background-color: #232323;
+}
+
+h1 {
+  background-color: dimgrey;
+
+  color: white;
+
+  text-align: center;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  margin: 0% auto;
+}
+
+div span {
+  color: black;
+}
+
+#stripe {
+  background-color: white;
+  height: 30px;
+  text-align: center;
+}
+
+.selected {
+  background-color: dimgrey;
+}
+
+#colorDisplay {
+  font-size: 60px;
+}
+
+button {
+  background-color: white;
+  border: none;
+
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
+}
+
+button:hover {
+  color: white;
+
+  background-color: lightskyblue;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
