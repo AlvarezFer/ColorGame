@@ -83,7 +83,7 @@ function reseteo() {
 
   messageDisplay.textContent = "";
 
-  reset.textContent = "Nuevos Colores";
+  reset.textContent = "New Colors";
 }
 
 reset.addEventListener("click", function () {
