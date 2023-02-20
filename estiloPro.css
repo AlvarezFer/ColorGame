@@ -1,92 +1,122 @@
-.square {
-  float: left;
-
-  width: 30%;
-
-  height: 0;
-
-  padding-bottom: 30%;
-
-  background-color: cornflowerblue;
-
-  display: block;
-
-  margin: 1%;
-
-  border-radius: 20px;
-
-  margin-top: 20px;
-
-  transition: background 0.5s ease-in;
-
-  cursor: pointer;
-}
-
-.container {
-  width: 600px;
-
-  margin: 0 auto;
-}
-
 body {
-  margin: 0% auto;
-
-  background-color: #232323;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: black;
 }
 
 h1 {
-  background-color: dimgrey;
-
-  color: white;
-
-  text-align: center;
-
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-
-  margin: 0% auto;
-}
-
-div span {
-  color: black;
+  font-size: 3rem;
+  margin-top: 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 #stripe {
-  background-color: white;
-  height: 30px;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  transition: background 0.4s ease-in;
+  background-color: #3e71d2;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#reset,
+.btns {
+  color: white;
+  background-color: #43b180;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
   text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#reset:hover,
+.btns:hover {
+  background-color: #ed7348;
 }
 
 .selected {
-  background-color: dimgrey;
-}
-
-#colorDisplay {
-  font-size: 60px;
-}
-
-button {
-  background-color: white;
-  border: none;
-
-  font-size: 20px;
-  text-transform: uppercase;
-  margin-top: 2px;
-  cursor: pointer;
-}
-
-#message {
-  display: inline-block;
-  width: 20%;
-}
-
-button:hover {
-  color: white;
-
-  background-color: lightskyblue;
+  background-color: #43b180;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 50px;
+  width: 75%;
+  height: 55%;
+  margin: 0 auto;
+}
+
+#message {
+  width: 10%;
+  font-size: 2.1vh;
+  margin-right: 54px;
+}
+
+.square {
+  float: left;
+  width: 33%;
+  height: 0;
+  padding-bottom: 33%;
+  margin: 1.66%;
+  background-color: steelblue;
+  transition: background-color 0.6s ease-in-out;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+@media only screen and (min-width: 768px) {
+  .square {
+    width: 22.5%;
+    padding-bottom: 22.5%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  #stripe {
+    padding: 40px;
+  }
+
+  #reset,
+  .btns {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .square {
+    width: 25%;
+    padding-bottom: 25%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  #stripe {
+    padding: 60px;
+  }
+
+  #reset,
+  .btns {
+    font-size: 2rem;
+    padding: 20px 40px;
+  }
 }
